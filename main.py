@@ -21,6 +21,7 @@ class User(db.Model):
     email = db.Column(db.String(120), unique=True)
     age = db.Column(db.Integer, index=True)
 
+
     def __init__(self, username, email, age):
         self.username = username
         self.email = email
